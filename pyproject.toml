@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ocr-svg"
+version = "0.1.0"
+description = "API service to generate OCR for an SVG"
+authors = ["Luke Milby <luke.milby@gmail.com>"]
+readme = "README.md"
+packages = [{include = "ocr_svg"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.98.0"
+uvicorn = "^0.22.0"
+pytesseract = "^0.3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
